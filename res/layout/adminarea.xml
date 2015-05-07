@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <ImageView
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal" android:src="@drawable/happilogo"
+            android:onClick="happilogoAdminhometime" android:layout_weight="0.05"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" android:layout_weight="0.04" android:paddingLeft="20dp"
+            android:paddingRight="20dp" android:paddingTop="20dp">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/insertitem"
+                android:id="@+id/launchinsert" android:layout_weight="1"
+                android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/delete"
+                android:id="@+id/deleteitem" android:layout_weight="1" android:background="@drawable/button_colour"
+                android:textStyle="bold" android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" android:paddingLeft="20dp" android:paddingRight="20dp">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/launchupdatearea"
+                android:id="@+id/update" android:layout_weight="1" android:background="@drawable/button_colour"
+                android:textStyle="bold" android:textSize="25dp"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/scrapetool"
+                android:id="@+id/launchscraper" android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_colour" android:textStyle="bold" android:layout_weight="1"
+                android:textSize="25dp"/>
+    </LinearLayout>
+</LinearLayout>

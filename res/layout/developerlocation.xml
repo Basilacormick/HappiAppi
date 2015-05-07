@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+
+    <com.esri.android.map.MapView
+            android:id="@+id/mapview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            mapoptions.MapType="topo"
+            mapoptions.ZoomLevel="12"
+            mapoptions.center="54.99, -7.3" android:background="@drawable/app_background">
+
+    </com.esri.android.map.MapView>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/topomap"
+                    android:id="@+id/topographicbutton" android:onClick="setTopomap" android:textStyle="bold"
+                    android:textColor="@color/title1_color" android:background="@drawable/button_colour"
+                    android:layout_weight="1"/>
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/streetmap"
+                    android:id="@+id/streetbutton" android:onClick="setStreetmap" android:textStyle="bold"
+                    android:background="@drawable/button_colour" android:layout_weight="1"/>
+            <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/satellitemap"
+                    android:id="@+id/satellitebutton" android:onClick="setSatellitemap" android:textStyle="bold"
+                    android:background="@drawable/button_colour" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

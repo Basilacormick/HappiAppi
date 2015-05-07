@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <scale android:fromXScale="1000dp"
+           android:toXScale="50dp"
+           android:fromYScale="600dp"
+           android:toYScale="20dp"
+           android:pivotX="100"
+           android:pivotY="120"
+           android:duration="@android:integer/config_longAnimTime"/>
+</set>

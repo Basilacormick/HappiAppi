@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MScSoftwareProject</string>
+        <string name="username">Username</string>
+        <string name="password">Password</string>
+        <string name="usernamehint">Enter your username</string>
+        <string name="passwordhint">Enter your password</string>
+        <string name="login">Login</string>
+        <string name="cancel">Cancel</string>
+        <string name="registration">Register</string>
+
+        <string name="aboutus">About App</string>
+        <string name="foodsearch">Food Search</string>
+        <string name="logcalories">Calorie Intake Log</string>
+        <string name="logexcercise">Exercise Log</string>
+        <string name="CalorieIntake">Optimal Calories</string>
+        <string name="Viewactivity">View Activity</string>
+        <string name="AdminLogin">Administrator LogIn</string>
+        <string name="welcome">Welcome</string>
+        <string name="foodlist">FoodList</string>
+        <string name="searchdatabase">FoodSearch</string>
+
+        <string name="NutrionalInfoTitle">Nutritional Information</string>
+
+        <string name="Profile">Profile</string>
+        <string name="gender">Gender</string>
+        <string name="male">Male</string>
+        <string name="female">Female</string>
+        <string name="height">Height</string>
+        <string name="age">Age</string>
+        <string name="currentweight">Weight</string>
+        <string name="activitylevel">Activity Level</string>
+        <string name="sedentary">Sedentary</string>
+        <string name="Active">Active</string>
+        <string name="moderatlyactive">Moderately Active</string>
+        <string name="veryactive">Very Active</string>
+
+        <string name="buttonsubmitdetails">Submit Details</string>
+        <string name="buttonsubmitcalories">Log Calories</string>
+        <string name="buttonlogexercise">Calorie Burn</string>
+        <string name="Calories">Calories</string>
+        <string name="dailytarget">Daily Target</string>
+        <string name="consumed">Consumed</string>
+        <string name="burn">Burn</string>
+        <string name="caloriebudget">Calorie Budget</string>
+
+        <!-- Code for administrator area-->
+        <string name="admin">Admin Area</string>
+        <string name="adminarea">Administrator Area</string>
+        <string name="insertitem">Insert Item</string>
+        <string name="itemname">Item Name</string>
+        <string name="carbs">Carbohydrates</string>
+        <string name="protein">Protein</string>
+        <string name="sugars">Sugars</string>
+        <string name="fats">Fats</string>
+        <string name="saturates">Saturates</string>
+        <string name="fiber">Fiber</string>
+        <string name="sodium">Sodium</string>
+        <string name="cholesterol">Cholesterol</string>
+        <string name="totalcalories">Total Calories</string>
+        <string name="submititem">Submit Item</string>
+
+        <string name="insert">Insert Item</string>
+        <string name="delete">Delete Item</string>
+        <string name="Search">Enter Item name</string>
+        <string name="Searchitem">Search Item</string>
+        <string name="searchfoodgroup">Search Food Group</string>
+        <string name="submitsearch">Submit Search</string>
+        <string name="deleteitem">Delete Item</string>
+        <string name="submitdelete">Submit Delete</string>
+
+        <string name="launchupdatearea">Update Item</string>
+
+        <string name="modifyitem">Modify Item</string>
+        <string name="itemtochange">Item to change</string>
+        <string name="submitchange">Submit Change</string>
+
+        <string name="aboutapp">About this app</string>
+        <string name="aboutdeveloper">About the developer</string>
+        <string name="contactdeveloper">Contact Developer</string>
+        <string name="sendemail">Send Email</string>
+
+        <string name="optimalcalorietitle">Your optimal daily calorie intake is:</string>
+        <string name="bmi">Current BMI:   </string>
+        <string name="emailmessage">Enter message here</string>
+
+        <string name="bmititle">Your BMI result explained</string>
+        <string name="resultspagetitle">Your Results</string>
+        <string name="yourcurrentweight">Current Weight: </string>
+        <string name="youridealweight">Ideal Weight: </string>
+
+        <string name="webresources">Web Resources</string>
+        <string name="weburl">Search </string>
+        <string name="enterurl">Enter website </string>
+        <string name="submiturl">Submit </string>
+        <string name="reload">Reload </string>
+
+        <string name="registeryourdetails">Register your details</string>
+        <string name="firstname">Firstname: </string>
+        <string name="lastname">Lastname: </string>
+        <string name="usersname">Username: </string>
+        <string name="userspassword">Password: </string>
+        <string name="submitregistration">Submit Registration </string>
+        <string name="activitylog">Activity Log </string>
+
+        <string name="scrapetool">Launch Scrape tool</string>
+        <string name="scraperarea">Scraper Area</string>
+        <string name="submitscrape">Scrape</string>
+        <string name="scrapesite">Enter website</string>
+        <string name="fooditem">Search Item</string>
+        <string name="scrapeheader">Name          Cals Pro Fat Carbs</string>
+
+        <string name="statsbased">Stats based on 100 gram serving</string>
+
+        <string name="topomap">Topographic</string>
+        <string name="streetmap">Street</string>
+        <string name="satellitemap">Satellite</string>
+
+        <string name="pedometer">Just Walk Pedometer</string>
+        <string name="stepcount">Step Count</string>
+        <string name="stopstep">Stop Stepping</string>
+
+        <string name="graphview">Graph View</string>
+        <string name="plotresults">Plot Results</string>
+
+        <string name="rememberme">Remember Me</string>
+        <string name="sport">Sport</string>
+</resources>
+

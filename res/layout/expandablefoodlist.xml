@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/app_background"
+
+        >
+    <ExpandableListView
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:id="@+id/expandableFoodLister" android:layout_gravity="center_horizontal|left"
+            android:padding="10dp"/>
+    <ScrollView
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="2dp"
+            android:fillViewport="false" android:id="@+id/scrollView"
+            android:layout_toRightOf="@+id/expandableFoodLister" android:layout_centerInParent="true">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_toRightOf="@+id/expandableFoodLister"
+                >
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView" android:src="@drawable/happilogo" android:layout_gravity="center"
+                    android:onClick="happilogoExpandableList"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/NutrionalInfoTitle"
+                        android:id="@+id/nutritionaltitle" android:textColor="@color/title1_color" android:textStyle="bold"
+                        android:textSize="30dp" android:gravity="center" android:visibility="invisible"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/servingsize" android:textStyle="bold" android:textColor="@color/title1_color"
+                        android:text="@string/statsbased" android:visibility="invisible"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/nutritionalinfo" android:textStyle="bold" android:textColor="@color/title1_color"
+                        android:visibility="visible" android:textSize="30dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.07">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.23" android:weightSum="1">
+        <ImageView
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView" android:layout_gravity="center_horizontal"
+                android:src="@drawable/happilogo" android:layout_weight="0.14" android:onClick="happilogoCalorie"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.60">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logcalories"
+                    android:id="@+id/textView2" android:layout_gravity="center|bottom" android:layout_weight="0.03"
+                    android:textColor="@color/title1_color" android:textStyle="bold" android:textSize="35dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.07" android:paddingLeft="50dp"
+            android:paddingRight="15dp">
+        <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/foodchoices" android:src="@drawable/arrow" android:scaleType="centerCrop"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Calories"
+                android:id="@+id/textView" android:textStyle="bold" android:textColor="@color/title1_color"
+                android:textSize="20dp"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputcalories" android:numeric="integer" android:layout_weight="1"/>
+        <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:id="@+id/foodBomb" android:src="@drawable/qr" android:scaleType="centerInside"
+                />
+    </LinearLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonsubmitcalories"
+            android:id="@+id/buttoncaloriesubmit" android:layout_gravity="center_horizontal" android:layout_weight="0.07"
+            android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="20dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp" android:layout_weight="0.04" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" android:paddingLeft="30dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dailytarget"
+                android:id="@+id/textView3" android:layout_weight="1" android:layout_gravity="bottom"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="20dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/burn"
+                android:id="@+id/textView4" android:layout_weight="1" android:layout_gravity="bottom"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="20dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consumed"
+                android:id="@+id/textView5" android:layout_weight="1" android:layout_gravity="bottom"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="20dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/caloriebudget"
+                android:id="@+id/textView6" android:layout_weight="1" android:layout_gravity="bottom"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" android:layout_weight="0.08" android:paddingLeft="40dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dailytarget" android:layout_weight="1" android:textSize="25dp"
+                android:textStyle="bold" android:textColor="@color/title1_color"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/caloriesburned" android:layout_weight="1" android:textSize="25dp"
+                android:textColor="@color/title1_color" android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/caloriesconsumed" android:layout_weight="1" android:textSize="25dp"
+                android:textColor="@color/title1_color" android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/targetcalories" android:layout_weight="1" android:textColor="@color/title4_color"
+                android:textStyle="bold" android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.31">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/currentdate" android:layout_gravity="center_horizontal" android:textStyle="bold"
+                android:textSize="35dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currenttime" android:layout_gravity="center_horizontal"
+                android:textColor="@color/title1_color" android:textStyle="bold" android:textSize="25dp"/>
+    </LinearLayout>
+</LinearLayout>

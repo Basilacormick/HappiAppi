@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal" android:src="@drawable/happilogo"
+            android:onClick="happilogoScraper"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/scraperarea"
+            android:id="@+id/textView" android:layout_gravity="center_horizontal"
+            android:textColor="@color/title1_color" android:textStyle="bold" android:textSize="35dp"
+            android:layout_weight="0.18"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="46dp" android:paddingRight="30dp" android:paddingLeft="5dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/scrapesite"
+                android:id="@+id/textView3" android:textStyle="bold" android:textSize="20dp"/>
+        <ImageButton
+                android:layout_width="31dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/Scrapeweb" android:src="@drawable/arrow" android:scaleType="centerCrop"
+                android:onClick="websrapechoice"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrapewebsite" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.08" android:paddingLeft="5dp"
+            android:paddingRight="30dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/fooditem"
+                android:id="@+id/textView2" android:textStyle="bold" android:paddingRight="10dp"
+                android:textSize="20dp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrapeitem" android:layout_weight="1"/>
+    </LinearLayout>
+    <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="@string/submitscrape"
+            android:id="@+id/submitscrapebutton" android:textStyle="bold"
+            android:background="@drawable/button_colour" android:layout_weight="0.12"
+            android:layout_gravity="center_horizontal" android:textSize="30dp"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.03">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name                                 Cals Pr Fa Ca"
+                android:id="@+id/textView4" android:layout_gravity="center_horizontal"
+                android:textColor="@color/title1_color" android:textSize="30dp" android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scraperesult" android:layout_gravity="center_horizontal" android:textStyle="bold"
+            android:textColor="@color/title1_color" android:textSize="30dp"/>
+</LinearLayout>

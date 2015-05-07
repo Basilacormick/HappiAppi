@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="58dp" android:paddingLeft="0dp" android:paddingTop="0dp">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reload"
+                android:id="@+id/refreshbutton" android:textStyle="bold"
+                android:layout_marginLeft="10dp" android:layout_marginTop="5dp"
+                android:background="@drawable/button_colour"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="98dp"
+                    android:layout_height="43dp"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/happilogo" android:layout_gravity="right" android:paddingTop="5dp"
+                    android:paddingRight="5dp" android:onClick="happilogowebView"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.05">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="47dp" android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+        <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:id="@+id/webchoices" android:src="@drawable/arrow" android:scaleType="centerCrop"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weburl"
+                android:id="@+id/textView" android:textColor="@color/title1_color" android:textStyle="bold"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/urlinput" android:layout_weight="1" android:hint="@string/enterurl"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/submiturl"
+                android:id="@+id/launchsearch" android:textStyle="bold" android:background="@drawable/button_colour"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:padding="5dp">
+        <WebView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/webviewer" android:layout_gravity="center_horizontal" android:padding="0dp"/>
+    </LinearLayout>
+</LinearLayout>

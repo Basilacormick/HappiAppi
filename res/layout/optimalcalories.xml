@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="24dp">
+    </LinearLayout>
+    <ImageView
+            android:layout_width="1399dp"
+            android:layout_height="89dp"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal" android:src="@drawable/happilogo"
+            android:onClick="happilogoCalories"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.86" android:weightSum="1"
+                android:padding="15dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/Profile"
+                    android:id="@+id/textView" android:layout_gravity="center_horizontal" android:textStyle="bold"
+                    android:textSize="30dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/gender"
+                    android:id="@+id/textView2" android:textStyle="bold" android:textSize="25dp"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="0.06">
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/radiogroupmalefemale">
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/male"
+                            android:id="@+id/radiobuttonMale" android:textSize="20dp" android:textStyle="bold"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/female"
+                            android:id="@+id/radiobuttonFemale" android:textSize="20dp" android:textStyle="bold"/>
+                </RadioGroup>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_weight="2.47">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="@string/age"
+                            android:id="@+id/textView4" android:textStyle="bold" android:textSize="25dp"/>
+                    <SeekBar
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/seekbarAge" android:progressDrawable="@drawable/seekbarprogress"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/currentage" android:layout_gravity="center_horizontal"
+                            android:textColor="@color/text1_color" android:textSize="25dp" android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1.25" android:weightSum="1">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/height"
+                        android:id="@+id/textView3" android:textStyle="bold" android:textSize="25dp"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seekbarHeight" android:progressDrawable="@drawable/seekbarprogress"
+                        android:max="260"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/currentheight" android:layout_gravity="center_horizontal"
+                        android:textColor="@color/text1_color" android:textStyle="bold" android:textSize="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="1.15">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/currentweight"
+                        android:id="@+id/textView5" android:textStyle="bold" android:textSize="25dp"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/seekBarweight" android:progressDrawable="@drawable/seekbarprogress"
+                        android:max="150"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/currentWeight" android:layout_gravity="center_horizontal"
+                        android:textColor="@color/text1_color" android:visibility="visible" android:textSize="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_weight="2.03">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/activitylevel"
+                        android:id="@+id/textView6" android:textStyle="bold" android:textSize="25dp"/>
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/radiogroupActive">
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sedentary"
+                            android:id="@+id/radiobuttonSedentary" android:textSize="20dp" android:textStyle="bold"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Active"
+                            android:id="@+id/radiobuttonActive" android:textSize="20dp" android:textStyle="bold"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/moderatlyactive"
+                            android:id="@+id/radiobuttonModeratelyActive" android:textSize="20dp"
+                            android:textStyle="bold"/>
+                    <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/veryactive"
+                            android:id="@+id/radiobuttonVeryActive" android:textSize="20dp" android:textStyle="bold"/>
+                </RadioGroup>
+            </LinearLayout>
+            </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="144dp">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonsubmitdetails"
+                android:id="@+id/buttonsubmitdetails" android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="20dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/calorieresult" android:layout_gravity="center_horizontal"
+                android:visibility="invisible" android:textSize="15dp" android:textStyle="bold"
+                android:textColor="@color/text1_color"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1" android:padding="20dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.08">
+    </LinearLayout>
+    <ImageView
+            android:layout_width="1578dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal" android:src="@drawable/happilogo"
+            android:onClick="happilogoAboutus" android:layout_weight="0.10"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.06">
+        <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="50dp"
+                android:id="@+id/locator" android:layout_gravity="right" android:src="@drawable/mapmarker"
+                android:scaleType="centerCrop" android:onClick="mapLocator"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.08">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutapp"
+                android:id="@+id/textView" android:textColor="@color/title1_color" android:textStyle="bold"
+                android:textSize="25dp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutapp" android:textColor="@color/title1_color" android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.08">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aboutdeveloper"
+                android:id="@+id/textView2" android:textColor="@color/title1_color" android:textStyle="bold"
+                android:textSize="25dp"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutdeveloper" android:textColor="@color/title1_color" android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.07" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contactdeveloper"
+                android:id="@+id/textView5" android:textStyle="bold" android:textColor="@color/title1_color"
+                android:textSize="25dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contactdetails" android:layout_weight="1" android:textColor="@color/title1_color"
+                    android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="101dp" android:layout_weight="0.09">
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/emailmessage" android:hint="@string/emailmessage" android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sendemail"
+                android:id="@+id/sendemailbutton" android:textStyle="bold" android:layout_weight="0"
+                android:layout_gravity="center|bottom" android:background="@drawable/button_colour"
+                android:textSize="20dp"/>
+    </LinearLayout>
+</LinearLayout>

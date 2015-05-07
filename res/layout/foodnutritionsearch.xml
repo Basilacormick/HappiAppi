@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.09">
+    </LinearLayout>
+    <ImageView
+            android:layout_width="900dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal" android:src="@drawable/happilogo"
+            android:onClick="happilogoFoodSearch" android:layout_weight="0.05"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.12">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.09">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/searchdatabase"
+                android:id="@+id/textView" android:layout_gravity="center_horizontal"
+                android:textColor="@color/title1_color" android:textStyle="bold" android:textSize="35dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.04" android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/foodlist"
+                android:id="@+id/foodlistbutton" android:layout_weight="1"
+                android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/foodsearch"
+                android:id="@+id/foodsearchbutton" android:layout_weight="1"
+                android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.09">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/searchfoodgroup"
+                android:id="@+id/foodgroupbutton" android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+    </LinearLayout>
+</LinearLayout>

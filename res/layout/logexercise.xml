@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.07">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.23" android:weightSum="1">
+        <ImageView
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView" android:layout_gravity="center_horizontal"
+                android:src="@drawable/happilogo" android:layout_weight="0.14" android:onClick="happilogoExercise"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="0.60">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logexcercise"
+                    android:id="@+id/textView2" android:layout_gravity="center|bottom" android:layout_weight="0.03"
+                    android:textColor="@color/title1_color" android:textStyle="bold" android:textSize="35dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.07" android:paddingLeft="25dp"
+            android:paddingRight="45dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/sport"
+                android:id="@+id/textView7" android:textStyle="bold" android:textSize="20dp"/>
+        <ImageButton
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/selectexercise" android:src="@drawable/arrow" android:scaleType="centerCrop"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Calories"
+                android:id="@+id/textView" android:textStyle="bold" android:textColor="@color/title1_color"
+                android:textSize="20dp"/>
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputexercise" android:numeric="integer"/>
+    </LinearLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonlogexercise"
+            android:id="@+id/buttoncaloriesubmit" android:layout_gravity="center_horizontal" android:layout_weight="0.07"
+            android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="20dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp" android:layout_weight="0.04" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" android:paddingLeft="30dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dailytarget"
+                android:id="@+id/textView3" android:layout_weight="1" android:layout_gravity="bottom"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="20dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/burn"
+                android:id="@+id/textView4" android:layout_weight="1" android:layout_gravity="bottom"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="20dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/consumed"
+                android:id="@+id/textView5" android:layout_weight="1" android:layout_gravity="bottom"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="20dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/caloriebudget"
+                android:id="@+id/textView6" android:layout_weight="1" android:layout_gravity="bottom"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="42dp" android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" android:paddingLeft="40dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dailytargets" android:layout_weight="1" android:textSize="25dp"
+                android:textStyle="bold" android:textColor="@color/title1_color"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calorieburn" android:layout_weight="1" android:textSize="25dp"
+                android:textColor="@color/title1_color" android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/caloriesconsume" android:layout_weight="1" android:textSize="25dp"
+                android:textColor="@color/title1_color" android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/targetcalorie" android:layout_weight="1" android:textColor="@color/title4_color"
+                android:textStyle="bold" android:textSize="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.31">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/thecurrentdate" android:layout_gravity="center_horizontal" android:textStyle="bold"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/thecurrenttime" android:layout_gravity="center_horizontal"
+                android:textColor="@color/title1_color" android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:text="@string/pedometer"
+                android:id="@+id/stepper" android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="20dp"/>
+    </LinearLayout>
+</LinearLayout>

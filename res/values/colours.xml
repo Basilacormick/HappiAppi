@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color
+            name = "title1_color">#FFFF</color>
+    <color
+            name = "title2_color">#FF95</color>
+    <color
+            name = "title3_color">#F373</color>
+    <color
+            name = "title4_color">#6E8B3D</color>
+    <color
+            name = "title5_color">#FF12</color>
+    <color
+            name = "title6_color">#00688B</color>
+    <color
+            name = "title7_color">#42C0FB</color>
+    <color
+            name = "text1_color">#FF8300</color>
+
+    <color name="yellow">#FFF0</color>
+    <color name="red">#FF12</color>
+    <color name="pink">#FF78</color>
+    <color name="blue">#F45e</color>
+
+    <color name="BackgroundColour">#42c0fb</color>
+
+
+</resources>

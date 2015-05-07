@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="97dp" android:weightSum="1">
+        <ImageView
+                android:layout_width="171dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView" android:layout_gravity="center_horizontal"
+                android:src="@drawable/happilogo" android:layout_weight="0.68"
+                android:onClick="happilogowelcomelogout"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="79dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:id="@+id/textView" android:layout_gravity="center_horizontal"
+                android:textColor="@color/title1_color" android:textSize="35dp" android:textStyle="bold"/>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="382dp" android:paddingLeft="20px" android:paddingRight="20px"
+                android:weightSum="1">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp" android:layout_gravity="center"
+                    >
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/aboutus"
+                        android:id="@+id/welcomebutton1" android:layout_weight="1"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/foodsearch"
+                        android:id="@+id/welcomebutton2" android:layout_weight="1"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/CalorieIntake"
+                        android:id="@+id/welcomebutton3" android:layout_weight="1"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/Viewactivity"
+                        android:id="@+id/welcomebutton4" android:layout_weight="1"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" android:layout_weight="0.00" android:layout_gravity="center"
+                    >
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/logcalories"
+                        android:id="@+id/welcomebutton5" android:layout_weight="1"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/logexcercise"
+                        android:id="@+id/welcomebutton6" android:layout_weight="1"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp" android:layout_weight="0">
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/admin"
+                        android:id="@+id/welcomebutton7" android:layout_weight="1"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/webresources"
+                        android:id="@+id/welcomebutton8" android:layout_weight="1"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp">
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/graphview"
+                        android:id="@+id/welcomebutton9" android:layout_gravity="center_horizontal"
+                        android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="25dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textmotivator" android:textStyle="bold" android:textColor="@color/title1_color"
+                android:layout_gravity="center_horizontal" android:paddingLeft="15dp" android:paddingRight="15dp"
+                android:textSize="25dp"/>
+    </LinearLayout>
+</LinearLayout>

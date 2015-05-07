@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@drawable/app_background"
+              android:weightSum="1">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_gravity="center_horizontal" android:src="@drawable/happilogo"
+            android:onClick="calorieResultLogo"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="37dp" android:layout_weight="0.14">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resultspagetitle"
+                android:id="@+id/textView2" android:layout_gravity="center_horizontal"
+                android:textColor="@color/title1_color" android:textStyle="bold" android:textSize="40dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" android:layout_weight="0.18">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/optimalcalorietitle" android:text="@string/optimalcalorietitle"
+                android:textStyle="bold" android:textColor="@color/title2_color" android:textSize="30dp"
+                android:layout_gravity="center_horizontal" android:layout_marginTop="10dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calorieResults" android:layout_gravity="center_horizontal" android:textSize="50dp"
+                android:textColor="@color/title1_color" android:textStyle="bold|normal"
+                android:visibility="visible"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.11">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="39dp" android:paddingLeft="25dp"
+            android:layout_marginLeft="60dp" android:layout_marginRight="60dp">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bmi"
+                android:id="@+id/textView" android:textStyle="bold" android:textColor="@color/title2_color"
+                android:textSize="30dp" android:layout_weight="1"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmiresult" android:textColor="@color/title1_color" android:textStyle="bold"
+                android:textSize="30dp" android:layout_gravity="left" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="51dp">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="68dp" android:layout_marginLeft="60dp" android:layout_marginRight="60dp"
+            android:layout_weight="0.12" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bmititle"
+                android:id="@+id/bmiresulttitle" android:visibility="invisible"
+                android:textColor="@color/title2_color" android:textStyle="bold" android:textSize="30dp"
+                android:layout_gravity="center_horizontal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bmitextresult" android:textColor="@color/title1_color" android:textStyle="bold"
+                android:textSize="25dp" android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.07">
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" android:layout_marginLeft="60dp" android:layout_marginRight="60dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yourcurrentweight"
+                android:id="@+id/textView3" android:textStyle="bold" android:textColor="@color/title2_color"
+                android:textSize="25dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/usercurrentweight" android:textColor="@color/title1_color" android:textStyle="bold"
+                android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="34dp" android:layout_marginLeft="60dp" android:layout_marginRight="60dp"
+            android:layout_weight="0.17">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/youridealweight"
+                android:id="@+id/textView4" android:textStyle="bold" android:textSize="25dp"
+                android:textColor="@color/title2_color"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/useridealweight" android:textColor="@color/title1_color" android:textStyle="bold"
+                android:textSize="20dp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plotresults"
+                android:id="@+id/plotresults" android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_colour" android:textStyle="bold" android:textSize="20dp"/>
+    </LinearLayout>
+</LinearLayout>
